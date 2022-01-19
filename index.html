@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./css/index.css" type="text/css">
+  <link rel="stylesheet" href="./css/spectre-icons.css" type="text/css">
+  <script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+  <title>墨苔沟通-Vector</title>
+</head>
+
+<body>
+  <div class="toast">
+    <span class="header-title">墨苔沟通</span>
+    <span class="header-author">@Vector</span>
+  </div>
+  <div class="content">
+    <div class="buttons">
+      <div class="button" onclick="submit()">朗读</div>
+      <div class="button delete" onclick="deleteOne()">删除</div>
+      <div class="button clear" onclick="clearInput()">清空</div>
+    </div>
+    <textarea id="mainInput" class="main-input"></textarea>
+    </br>
+    <div class="buttons">
+      <div class="button" onclick="commonButton('hello')">你好</div>
+      <div class="button" onclick="commonButton('hungry')">我饿了</div>
+      <div class="button" onclick="commonButton('thirsty')">我渴了</div>
+    </div>
+    </br>
+    <div class="buttons">
+      <div class="button" onclick="commonButton('sit')">坐下</div>
+      <div class="button" onclick="commonButton('urine')">小便</div>
+      <div class="button" onclick="commonButton('poop')">大便</div>
+    </div>
+  </div>
+</body>
+
+</html>
