@@ -45,3 +45,32 @@ function commonButton(type) {
   }
   window.speechSynthesis.speak(speechSU);
 }
+
+function click(key) {
+  if (key?.keyCode)
+    switch (key?.keyCode) {
+      case 90: commonButton('hungry');
+        break;
+      case 88: commonButton('thirsty');
+        break;
+      case 67: commonButton('urine');
+        break;
+      case 86: commonButton('poop');
+        break;
+      case 66: commonButton('sit');
+        break;
+      case 32: commonButton('hello');
+        break;
+    }
+}
+
+document.onkeydown = click;
+
+// z 90
+// x 88
+// c 67
+// v 86
+// b 66
+// n 78
+// m 77
+// space 32
